@@ -5,10 +5,10 @@ import Footer from '../components/layout/Footer'
 
 function Layout() {
   return (
-    <div>
+    <div className='min-h-screen font-roboto'>
        <Header />
        <div className='flex'>
-            <Outlet />
+            <Outlet></Outlet>
        </div>
     <Footer />
     </div>

@@ -2,9 +2,7 @@
 
 function Footer() {
   return (
-    <div>
-      
-    </div>
+   <div>Hi</div>
   )
 }
 
