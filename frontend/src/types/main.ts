@@ -3,6 +3,7 @@ export type Post = {
     title: string,
     url:string,
     description: string,
+    content: string,
     createData: string,
     comments: string
 }

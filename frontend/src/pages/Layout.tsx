@@ -7,7 +7,7 @@ function Layout() {
   return (
     <div className='min-h-screen font-roboto'>
        <Header />
-       <div className='flex min-h-[77vh] p-5 '>
+       <div className='flex min-h-[77vh]  overflow-x-hidden box-border'>
             <Outlet></Outlet>
        </div>
     <Footer />

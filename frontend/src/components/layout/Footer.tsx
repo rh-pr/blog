@@ -7,7 +7,7 @@ function Footer() {
         <p className="font-black text-xl">Blog</p>
         <p className="font-medium text-sm">Pets application</p>
       </div>
-      <p className="font-black self-end">RH-Developer</p>
+      <p className="font-black self-end pr-5">RH-Developer</p>
    </div>
   )
 }

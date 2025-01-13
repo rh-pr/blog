@@ -15,7 +15,7 @@ function Home() {
             id: '2',
             title: 'Fueling Your Inner Drive',
             url: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c291bHxlbnwwfHwwfHx8MA%3D%3D',
-            content: 'Motivation is the key to achieving our dreams and goals. Whether it’s a simple reminder to keep pushing forward or a deep internal drive, staying motivated can help us overcome challenges and seize opportunities. The journey may be tough, but every step forward is a step toward success. Stay focused, stay persistent, and the rewards will follow.',
+            content: 'Motivation is the key to achieving our dreams and goals. Whether it’s a simple reminder to keep pushing forward or a deep internal drive, staying motivated can help us overcome challenges and seize opportunities. The journey may be tough, but every step forward is a step toward success. Stay focused, stay persistent, and the rewards will follow . Motivation is the key to achieving our dreams and goals. Whether it’s a simple reminder to keep pushing forward or a deep internal drive, staying motivated can help us overcome challenges and seize opportunities. The journey may be tough, but every step forward is a step toward success. Stay focused, stay persistent, and the rewards will follow.',
             createData: '11 Jan, 2025',
             comments: '0',
             description: 'Motivation'
@@ -67,8 +67,8 @@ function Home() {
         },
     ]
   return (
-    <div className="w-screen ">
-       <div className="flex flex-wrap">
+    <div className="w-full p-5 overflow-x-hidden ">
+       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 box-border  overflow-x-hidden">
          {data && data.map((el: Post, ind:number) => <BlogCard key={`card-${ind}`} data={el} />)}
        </div>
     </div>
