@@ -32,7 +32,7 @@ function Header() {
                     return <li key={`men-${ind}`}><Link className="p-2 font-medium" to={el.path}>{el.text}</Link></li>
                 })}
             </ul>
-            <button className="text-white bg-black px-2 py-2 rounded text-sm font-bold">
+            <button className="text-white bg-black px-2 py-2 rounded-lg text-sm font-bold">
                 <Link to={'/'}>+ New Post</Link>
             </button>
         </div>
@@ -44,7 +44,7 @@ function Header() {
                     return <li key={`men-${ind}`}><Link className="p-2 font-medium" to={el.path}>{el.text}</Link></li>
                 })}
             </ul>
-            <button className="text-white bg-black px-2 py-2 rounded text-sm font-bold">
+            <button className="text-white bg-black px-2 py-2 rounded-lg text-sm font-bold">
                 <Link to={'/'}>+ New Post</Link>
             </button>
             </div>}
