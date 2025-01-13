@@ -4,6 +4,11 @@ export type Post = {
     url:string,
     description: string,
     content: string,
-    createData: string,
+    createDate: string,
     comments: string
+}
+
+export type Menu = {
+    text: string,
+    path: string
 }

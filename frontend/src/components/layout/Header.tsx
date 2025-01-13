@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom"
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
+import { Menu } from '../../types/main';
 
-type Menu = {
-    text: string,
-    path: string
-}
 
 function Header() {
 
