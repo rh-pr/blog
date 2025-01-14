@@ -1,8 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import { Post } from '../../types/main';
 
 function BlogCard({data}: {data: Post}) {
+  const navigate = useNavigate();
+
+  const navigetToBlog = () => {
+    navigate('/blog')
+  }
     return (
-      <div className="rounded-lg p-2 flex flex-col shadow-lg shadow-black-500/40 box-border overflow-x-hidden max-h-[500px]">
+      <div onClick={() => navigetToBlog()} className="rounded-lg p-2 flex flex-col shadow-lg shadow-black-500/40 box-border overflow-x-hidden max-h-[500px]">
         <div className="w-full h-52 pt-5 overflow-hidden">
           <img src={data.url} alt="" className="rounded object-cover"/>
         </div>

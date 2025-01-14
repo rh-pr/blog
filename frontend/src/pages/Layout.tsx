@@ -10,7 +10,7 @@ function Layout() {
        <div className='flex min-h-[77vh]  overflow-x-hidden box-border'>
             <Outlet></Outlet>
        </div>
-    <Footer />
+       <Footer />
     </div>
   )
 }

@@ -33,7 +33,7 @@ function Header() {
                 })}
             </ul>
             <button className="text-white bg-black px-2 py-2 rounded-lg text-sm font-bold">
-                <Link to={'/'}>+ New Post</Link>
+                <Link to={'/createBlog'}>+ New Post</Link>
             </button>
         </div>
         <IoMenu onClick={() => taggleMenu()} className="text-4xl md:hidden" />
@@ -45,7 +45,7 @@ function Header() {
                 })}
             </ul>
             <button className="text-white bg-black px-2 py-2 rounded-lg text-sm font-bold">
-                <Link to={'/'}>+ New Post</Link>
+                <Link to={'/createBlog'}>+ New Post</Link>
             </button>
             </div>}
         </div>
