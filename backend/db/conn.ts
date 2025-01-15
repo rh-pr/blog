@@ -12,13 +12,11 @@ export const client = new Client({
 (async () => {
   try {
     await client.connect();
-    
-    const res = await client.query('SELECT $1::text as message', ['Hello world!']);
-    console.log(res.rows[0].message); // Output: Hello world!
+    console.log('Database connecting')
   } catch (error) {
     console.error('Database error:', error);
   } finally {
-    await client.end();
+    //  await client.end();
   }
 })();
 
