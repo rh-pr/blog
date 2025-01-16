@@ -1,0 +1,2 @@
+2025-01-16T22:56:25.935Z [31merror[39m: Query error:  syntax error at or near "blog"
+2025-01-16T22:56:25.936Z [31merror[39m: Database error:  {"length":93,"name":"error","severity":"ERROR","code":"42601","position":"10","file":"scan.l","line":"1246","routine":"scanner_yyerror"}
