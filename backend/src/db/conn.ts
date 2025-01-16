@@ -1,6 +1,6 @@
 import { Pool, QueryArrayConfig, QueryResult } from 'pg';
 import config from '../config/default';
-import logger from '../utilits/logger';
+import logger from '../../utilits/logger';
 
 export const pool = new Pool({
     user: config.DATABASE.DB_USER,

@@ -1,8 +1,8 @@
 import express, { Express, json, Request, Response} from 'express';
-import db from '../db/conn';
 import dotenv from 'dotenv';
 import multer from 'multer';
-import logger from '../utilits/logger';
+
+import blog from './routes/blog.route';
 
 dotenv.config();
 
@@ -24,15 +24,7 @@ const upload = multer({ storage: storage })
 app.use(json())
 
 
-app.get('/blogs', async (_: Request, res: Response) => {
-  try {
-    const blogs_db = await db.queryConnect(`SELECT * FROM blog`);
-    res.status(200).json(blogs_db.rows);
-  } catch (e) {
-    logger.error(`Database error:  ${JSON.stringify(e)}`);
-    res.status(500).json({error: `Can not retrive blogs`});
-  }
-});
+app.use(`/blogs`, blog);
 
 
 
