@@ -1,2 +1,8 @@
 2025-01-16T22:56:25.935Z [31merror[39m: Query error:  syntax error at or near "blog"
 2025-01-16T22:56:25.936Z [31merror[39m: Database error:  {"length":93,"name":"error","severity":"ERROR","code":"42601","position":"10","file":"scan.l","line":"1246","routine":"scanner_yyerror"}
+2025-01-16T23:48:23.726Z [31merror[39m: Query error:  column "technology" does not exist
+2025-01-16T23:48:23.728Z [31merror[39m: Database error:  {"length":110,"name":"error","severity":"ERROR","code":"42703","position":"37","file":"parse_relation.c","line":"3721","routine":"errorMissingColumn"}
+2025-01-16T23:50:31.295Z [31merror[39m: Query error:  syntax error at end of input
+2025-01-16T23:50:31.297Z [31merror[39m: Database error:  {"length":91,"name":"error","severity":"ERROR","code":"42601","position":"38","file":"scan.l","line":"1238","routine":"scanner_yyerror"}
+2025-01-17T00:18:14.406Z [31merror[39m: Query error:  invalid input syntax for type integer: "NaN"
+2025-01-17T00:18:14.408Z [31merror[39m: Database error:  {"length":146,"name":"error","severity":"ERROR","code":"22P02","where":"unnamed portal parameter $1 = '...'","file":"numutils.c","line":"619","routine":"pg_strtoint32_safe"}

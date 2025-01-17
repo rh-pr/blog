@@ -8,7 +8,7 @@ function BlogCard({data}: {data: Post}) {
     navigate('/blog')
   }
     return (
-      <div onClick={() => navigetToBlog()} className="rounded-lg p-2 flex flex-col shadow-lg shadow-black-500/40 box-border overflow-x-hidden max-h-[500px]">
+      <div onClick={() => navigetToBlog()} className="rounded-lg px-2 pb-2  bg-white flex flex-col shadow-lg shadow-black-500/40 box-border overflow-x-hidden max-h-[500px] duration-500 hover:scale-105  ">
         <div className="w-full h-52 pt-5 overflow-hidden">
           <img src={data.url} alt="" className="rounded object-cover"/>
         </div>

@@ -24,7 +24,7 @@ const upload = multer({ storage: storage })
 app.use(json())
 
 
-app.use(`/blogs`, blog);
+app.use(`/posts`, blog);
 
 
 
