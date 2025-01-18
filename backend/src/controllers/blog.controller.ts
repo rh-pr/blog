@@ -14,6 +14,7 @@ export async function getPosts (_: Request, res: Response) {
  }
 
  export async function getPostsByCategory (req: Request, res: Response) {
+  console.log(req)
     try {
         const blogs_db = await db.queryConnect(`SELECT * FROM blog WHERE category = $1`, [req.body.category]);
         res.status(200).json(blogs_db.rows);
@@ -24,7 +25,6 @@ export async function getPosts (_: Request, res: Response) {
  }
 
 export async function getPostById (req: Request, res: Response) {
-  console.log('req', req.query.id)
   try {
     const blogs_db = await db.queryConnect(`SELECT * FROM blog WHERE id = $1`, [req.params.id]);
     res.status(200).json(blogs_db.rows);

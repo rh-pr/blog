@@ -1,6 +1,7 @@
 import express, { Express, json, Request, Response} from 'express';
 import dotenv from 'dotenv';
 import multer from 'multer';
+import cors from 'cors';
 
 import blog from './routes/blog.route';
 
@@ -22,6 +23,10 @@ const upload = multer({ storage: storage })
 
 
 app.use(json())
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST"]
+}));
 
 
 app.use(`/posts`, blog);

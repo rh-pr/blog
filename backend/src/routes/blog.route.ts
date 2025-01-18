@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/',  getPosts);
 // router.get('/',  getPostById);
-router.get('/category', getPostsByCategory);
+router.post('/category', getPostsByCategory);
 router.get('/:id', getPostById)
 
 export default router;
