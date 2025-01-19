@@ -24,7 +24,7 @@ function Header() {
   }
 
   return (
-    <div className="border-b">
+    <div className="border-b sticky top-0 bg-white">
         <div className="p-5 flex justify-between">
         <Link to={'/'}>
             <span onClick={() => setActiveMenu('')} className="text-2xl font-black" >BLOGER</span>

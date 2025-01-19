@@ -7,10 +7,9 @@ export type Post = {
     createdata: string
 }
 
-
 export type Menu = {
     text: string,
-    path: string
+    path: string,
 }
 
 export interface CreatedPost {

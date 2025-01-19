@@ -14,7 +14,7 @@ function CreateBlog() {
     image: '',
     category: '',
     post: '',
-    createdate: ''
+    createdata: ''
   }
   
   const  [newPost, setNewPost] = useState<Post>(defaultValue)
@@ -36,7 +36,7 @@ function CreateBlog() {
         formData.append('post', newPost.post);
         formData.append('category', newPost.category);
         formData.append('id', '');
-        formData.append('createdata', newPost.createdate);
+        formData.append('createdata', newPost.createdata);
 
         if (newPost.image) {
           formData.append('file', newPost.image);
