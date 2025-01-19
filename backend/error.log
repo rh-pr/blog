@@ -72,3 +72,7 @@
 2025-01-18T20:08:32.109Z [31merror[39m: Database error:  {"length":162,"name":"error","severity":"ERROR","code":"22P02","where":"unnamed portal parameter $1 = '...'","file":"numutils.c","line":"619","routine":"pg_strtoint32_safe"}
 2025-01-18T21:35:14.253Z [31merror[39m: Query error:  invalid input syntax for type integer: "category"
 2025-01-18T21:35:14.256Z [31merror[39m: Database error:  {"length":151,"name":"error","severity":"ERROR","code":"22P02","where":"unnamed portal parameter $1 = '...'","file":"numutils.c","line":"619","routine":"pg_strtoint32_safe"}
+2025-01-18T21:44:19.043Z [31merror[39m: Query error:  invalid input syntax for type integer: "category"
+2025-01-18T21:44:19.045Z [31merror[39m: Database error:  {"length":151,"name":"error","severity":"ERROR","code":"22P02","where":"unnamed portal parameter $1 = '...'","file":"numutils.c","line":"619","routine":"pg_strtoint32_safe"}
+2025-01-19T16:48:20.492Z [31merror[39m: Query error:  null value in column "createdata" of relation "blog" violates not-null constraint
+2025-01-19T16:57:20.011Z [31merror[39m: Query error:  column "creatsedata" of relation "blog" does not exist

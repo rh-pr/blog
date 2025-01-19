@@ -1,7 +1,7 @@
 export type Post = {
     id: string
     title: string,
-    image:string,
+    image:string | File,
     category: string,
     post: string,
     createDate: string
