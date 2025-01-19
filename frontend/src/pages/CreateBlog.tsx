@@ -27,7 +27,6 @@ function CreateBlog() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLElement>) => {
     e.preventDefault();
-    console.log('hie');
     
     if (categories.includes(newPost.category.toLowerCase())) {
       console.log('hi')
@@ -63,8 +62,8 @@ function CreateBlog() {
             <label htmlFor="text">Title</label>
             <input onChange={(e) => setNewPost({...newPost, title: e.target.value})} className="w-full h-10 rounded-lg px-4 focus:border-color-whyte border-2 border-gray-300 focus:outline-none focus:border-gray-400 focus:shadow-md text-sm" required type="text" name="text" id="text" />
             <label className="pt-4" htmlFor="category">Category</label>
-            <select onChange={(e) => setNewPost({...newPost, category: e.target.value })} className="w-full h-10 rounded-lg px-2 focus:border-color-whyte border-2 border-gray-300 focus:outline-none focus:border-gray-400 focus:shadow-md text-sm" required name="category" id="category">
-              <option value="" disabled></option>
+            <select onChange={(e) => setNewPost({...newPost, category: e.target.value.toLowerCase() })} className="w-full h-10 rounded-lg px-2 focus:border-color-whyte border-2 border-gray-300 focus:outline-none focus:border-gray-400 focus:shadow-md text-sm" required name="category" id="category">
+              <option value="" selected disabled></option>
               <option value="Nature">Nature</option>
               <option value="Technology">Technology</option>
               <option value="Learning">Learning</option>

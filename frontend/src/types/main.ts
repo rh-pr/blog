@@ -4,7 +4,7 @@ export type Post = {
     image:string | File,
     category: string,
     post: string,
-    createdate: string
+    createdata: string
 }
 
 
