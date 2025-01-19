@@ -5,4 +5,6 @@ export  const menu: Menu[] = [
     {text: 'Technology', path: '/'},
     {text: 'Learning', path: '/'},
     {text: 'Motivation', path: '/'}
-]
+];
+
+export const categories = ['nature', 'technology', 'learning', 'motivation']

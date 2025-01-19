@@ -4,11 +4,15 @@ export type Post = {
     image:string | File,
     category: string,
     post: string,
-    createDate: string
+    createdate: string
 }
 
 
 export type Menu = {
     text: string,
     path: string
+}
+
+export interface CreatedPost {
+    id: string
 }

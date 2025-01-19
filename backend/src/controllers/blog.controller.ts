@@ -45,11 +45,7 @@ export async function createPost(req: Request, res: Response) {
        [req.body.title, url, req.body.post, req.body.category, date]);
 
     res.status(200).json({
-      id: data.rows[0].id,
-      title: req.body.title,
-      post: req.body.post,
-      category: req.body.category,
-      createdata: date
+      id: data.rows[0].id
     })
   } catch(e) {
     console.log(e)
